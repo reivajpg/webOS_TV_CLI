@@ -1,0 +1,48 @@
+{
+    "display" : ["name", "synopsis", "options", "extraoption", "description", "examples"],
+    "notab":["examples"],
+    "notitle" : ["extraoption"],
+    "name" : "ares-extend-dev - extend device's devmode session",
+    "synopsis" : {
+        "default" : [
+            "ares-extend-dev [OPTION...]"
+        ]
+    },
+    "description" : {
+        "default": [
+            "This command tries to extend the device's Developer Mode session time.",
+            "",
+            "It ONLY works when the Developer Mode is on and the session time remains longer than 0min.",
+            "If the session time is not updated, check the network connection or DevMode status.",
+            "DO NOT use this command in the emulator as Developer Mode app is not installed in the emulator."
+        ]
+    },
+    "options" : {
+        "cmdOpt":"option",
+        "default" : ["device", "device-list", "help", "version", "verbose"],
+        "device" : [
+            "-d, --device <DEVICE> @TAB@ Specify DEVICE to use",
+            "@TAB@ If not specified, set to default device"
+        ],
+        "device-list" : "-D, --device-list @TAB@ List the available DEVICEs",
+        "help" : "-h, --help @TAB@ Display this help",
+        "version" : "-V, --version @TAB@ Display version info",
+        "verbose" : "-v @TAB@ Display this verbose log"
+    },
+    "extraoption" : {
+        "cmdOpt":"hidden",
+        "default" : {
+            "cmdOpt":"option",
+            "default" : ["level"],
+            "level" : "--level <LEVEL> @TAB@ Set a log LEVEL of 'silly', 'verbose', 'info', 'http', 'warn', 'error'"
+        }
+    },
+    "examples" : {
+        "default" : [
+            "",
+            "# Extend DEVICE's DevMode session",
+            "ares-extend-dev -d DEVICE",
+            ""
+        ]
+    }
+}

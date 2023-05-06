@@ -1,0 +1,57 @@
+{
+    "ares-build" : {
+        "description" : "Build native app or service templates"
+    },
+    "ares-config" : {
+        "profile" : ["none"],
+        "description" : "Configure webOS CLI"
+    },
+    "ares-device-info" : {
+        "description" : "Print device's valid system information"
+    },
+    "ares-extend-dev" : {
+        "description" : "Extend device's devmode session"
+    },
+    "ares-gdbserver" : {
+        "description" : "Run gdbserver on the device"
+    },
+    "ares-generate" : {
+        "description" : "Generate files for a webOS app or service"
+    },
+    "ares-inspect" : {
+        "description" : "Provide URL to use Web Inspector or Node Inspector"
+    },
+    "ares-install" : {
+        "description" : "Install or Remove app from a device"
+    },
+    "ares-launch" : {
+        "description" : "Launch or close apps"
+    },
+    "ares-log" : {
+        "description" : "Display application logs from a webOS device"
+    },
+    "ares-novacom" : {
+        "description" : "Command Line Tool to control target device"
+    },
+    "ares-package" : {
+        "description" : "Create a webOS application package file"
+    },
+    "ares-pull" : {
+        "profile" : ["none"],
+        "description" : "Pull file from a device"
+    },
+    "ares-push" : {
+        "profile" : ["none"],
+        "description" : "Push the file to target device"
+    },
+    "ares-server" : {
+        "description" : "Run a local web server based on path"
+    },
+    "ares-setup-device" : {
+        "description" : "Add or modify the informations of the devices to use"
+    },
+    "ares-shell" : {
+        "profile" : ["none"],
+        "description" : "Open a device terminal or run a command"
+    }
+}
